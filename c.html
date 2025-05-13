@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Cars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <header>Explore Cars</header>
+
+    <div class="container">
+        <div class="card">
+            <img src="img1.jpg" alt="Lamborghini">
+            <div class="card-content">
+                <h3>Lamborghini Aventador</h3>
+                <p>Supercar with V12 engine delivering unmatched performance and style.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img2.jpg" alt="Ferrari">
+            <div class="card-content">
+                <h3>Ferrari 488</h3>
+                <p>Italian excellence with a twin-turbo V8 and aerodynamic design.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img3.jpg" alt="Tesla">
+            <div class="card-content">
+                <h3>Tesla Model S</h3>
+                <p>Luxury electric sedan with cutting-edge tech and zero emissions.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img4.jpg" alt="Bugatti">
+            <div class="card-content">
+                <h3>Bugatti Chiron</h3>
+                <p>One of the fastest cars in the world with an iconic W16 engine.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
